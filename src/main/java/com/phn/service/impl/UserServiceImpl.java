@@ -25,5 +25,4 @@ public class UserServiceImpl implements IUserService {
 	public boolean isExist(UserEntity user) {
 		return userDao.isExist(user);
 	}
-
 }

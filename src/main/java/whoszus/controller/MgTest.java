@@ -1,11 +1,13 @@
 package whoszus.controller;
 
 import com.google.gson.Gson;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import whoszus.model.firstModel.entity.ClassCather;
-
+import whoszus.model.firstModel.service.IFirstService;
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -19,6 +21,9 @@ import java.util.UUID;
 @Controller
 @RequestMapping("/cc")
 public class MgTest {
+
+    @Autowired
+    private IFirstService firstService;
 
     @RequestMapping("test")
 //    @ResponseBody
@@ -37,8 +42,22 @@ public class MgTest {
         try {
             response.getWriter().write(callbackFunName + "("+jsonData+")");
         } catch (IOException e) {
-            System.out.println("hengdaliangyou   userCount ----ex -----  ");
+            System.out.println("exception ");
         }
+    }
+
+
+    @ResponseBody
+    @RequestMapping("add")
+    public List<ClassCather> add(ClassCather classCather ){
+        List<ClassCather> list =new ArrayList<>();
+        String uuid = UUID.randomUUID().toString();
+        classCather.setUuid(uuid);
+        System.out.println("-----"+classCather);
+        firstService.save(classCather);
+        list.add(classCather);
+        System.out.println(list);
+        return list;
     }
 
 }

@@ -34,6 +34,7 @@ public class FirstDaoImpl  implements IFirstDao{
     public void save(ClassCather classCather) {
         Session session =this.getSession();
         session.save(classCather);
+        System.out.println("save");
     }
 
     @Override

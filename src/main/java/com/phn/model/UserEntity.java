@@ -22,7 +22,7 @@ public class UserEntity {
 	private boolean sex; // 默认为0；0表示男，1表示女
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "UID", nullable = false, length = 9)
 	public int getId() {
 		return id;

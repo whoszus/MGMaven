@@ -1,8 +1,10 @@
 package whoszus.model.firstModel.service.impl;
 
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import whoszus.model.firstModel.dao.IFirstDao;
 import whoszus.model.firstModel.entity.ClassCather;
-import whoszus.model.firstModel.service.IFirstServiceDao;
+import whoszus.model.firstModel.service.IFirstService;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -10,7 +12,9 @@ import java.util.List;
 /**
  * Created by linyanying on 2015/10/31.
  */
-public class FirstService implements IFirstServiceDao {
+@Transactional
+@Service("firstService")
+public class FirstService implements IFirstService {
     @Resource
     private IFirstDao firstDao;
 

@@ -1,6 +1,9 @@
 package whoszus.model.firstModel.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by linyanying on 2015/10/28.
@@ -8,7 +11,7 @@ import javax.persistence.*;
 
 @Table(name = "t_classCatcher")
 @Entity
-public class ClassCather {
+public class ClassCather implements Serializable{
     private String name;
     private String tel;
     private String uuid;
@@ -35,7 +38,8 @@ public class ClassCather {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    @GeneratedValue(generator = "paymentableGenerator")
+    @GenericGenerator(name = "paymentableGenerator", strategy = "assigned")
     @Column(name="uuid" ,nullable = false ,length = 64)
     public String getUuid() {
         return uuid;
