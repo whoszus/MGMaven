@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.settings" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/docs/HowToDothis.md" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/docs/Readme.md" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/docs/model.md" charset="GBK" />
     <file url="file://$PROJECT_DIR$/docs/whoszus.sql" charset="GBK" />
     <file url="file://$PROJECT_DIR$/pom.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src" charset="GBK" />
