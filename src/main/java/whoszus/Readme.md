@@ -60,5 +60,18 @@
     4.could not execute statement] with root cause
       java.sql.SQLException: Field 'uuid' doesn't have a default value
       
-      
+      @GeneratedValue(generator = "paymentableGenerator")
+          @GenericGenerator(name = "paymentableGenerator", strategy = "assigned")
+          
+          修改后出现操作数据库中没报错,但数据没成功;
+          
+    5.  如上 :
+        a.session需要close();??
+        b.两种配置事务的方式,第一种被注释了,数据库操作没有成功;
+        	<!-- 注解方式配置事物 -->
+        	 <tx:annotation-driven transaction-manager="transactionManager" />
+        
+        	<!-- 拦截器方式配置事物 -->
+        	<tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+        c.测试注释第二种:
         

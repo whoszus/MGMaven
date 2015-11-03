@@ -2,6 +2,7 @@ package whoszus.model.firstModel.dao.impl;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 import org.springframework.stereotype.Repository;
 import whoszus.model.firstModel.dao.IFirstDao;
@@ -32,6 +33,7 @@ public class FirstDaoImpl  implements IFirstDao{
 
     @Override
     public void save(ClassCather classCather) {
+
         Session session =this.getSession();
         session.save(classCather);
         System.out.println("save");
