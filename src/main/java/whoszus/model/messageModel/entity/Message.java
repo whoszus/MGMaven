@@ -10,6 +10,7 @@ public class Message implements Serializable{
     private String uuid; //主键
     private Date date;  //创建时间
     private String detail;  //评论内容
-    private int uid;
-    private int anonymous;
+    private int uid;    //userid
+    private int anonymous; //匿名
+
 }
