@@ -45,4 +45,4 @@ Spring 2.5 在 @Repository的基础上增加了功能类似的额外三个注解：@Component、@Serv
  scope-resolver="footmark.SimpleScopeResolver" />
 
 
- ---http://blog.csdn.net/ye1992/article/details/19971467
+ ---http://blog.csdn.net/ye1992/article/details/19971467f
