@@ -47,7 +47,7 @@
 	</properties>
 	<!-- maven打成war包放到tomcat目录下，即可运行 -->
 	<build>
-		<finalName>PHN</finalName>
+		<finalName>whoszus</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
