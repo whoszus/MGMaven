@@ -17,4 +17,55 @@ public class UloginInfo implements Serializable {
     private String password;
     private Date RegistDate;
     private Date lastLoginDate;
+
+    public int getId() {
+        return id;
+    }
+
+    public int getUid() {
+        return uid;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public Date getRegistDate() {
+        return RegistDate;
+    }
+
+    public Date getLastLoginDate() {
+        return lastLoginDate;
+    }
+
+
+
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setRegistDate(Date registDate) {
+        RegistDate = registDate;
+    }
+
+    public void setLastLoginDate(Date lastLoginDate) {
+        this.lastLoginDate = lastLoginDate;
+    }
 }

@@ -17,4 +17,54 @@ public class User implements Serializable {
     private int role;
     private int classId;
 
+    public String getNick() {
+        return nick;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getQq() {
+        return qq;
+    }
+
+    public String getWebChat() {
+        return webChat;
+    }
+
+    public int getRole() {
+        return role;
+    }
+
+    public int getClassId() {
+        return classId;
+    }
+
+
+
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
+    }
+
+    public void setQq(String qq) {
+        this.qq = qq;
+    }
+
+    public void setWebChat(String webChat) {
+        this.webChat = webChat;
+    }
+
+    public void setRole(int role) {
+        this.role = role;
+    }
+
+    public void setClassId(int classId) {
+        this.classId = classId;
+    }
 }
