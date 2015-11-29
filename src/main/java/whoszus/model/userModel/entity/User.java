@@ -1,8 +1,8 @@
 package whoszus.model.userModel.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
+
 
 /**
  * Created by Administrator on 2015/11/3.
