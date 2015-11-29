@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import whoszus.model.firstModel.dao.IFirstDao;
 import whoszus.model.firstModel.entity.ClassCather;
@@ -20,7 +21,7 @@ import java.util.List;
 public class FirstDaoImpl  implements IFirstDao{
 
 
-    @Resource
+    @Autowired
     private SessionFactory sessionFactory;
 
     public Session getSession(){

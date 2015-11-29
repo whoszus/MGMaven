@@ -47,4 +47,24 @@ public class Message implements Serializable{
     public int getAnonymous() {
         return anonymous;
     }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public void setAnonymous(int anonymous) {
+        this.anonymous = anonymous;
+    }
 }

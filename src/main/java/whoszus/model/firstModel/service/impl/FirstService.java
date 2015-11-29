@@ -1,5 +1,6 @@
 package whoszus.model.firstModel.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import whoszus.model.firstModel.dao.IFirstDao;
@@ -15,7 +16,7 @@ import java.util.List;
 @Transactional
 @Service("firstService")
 public class FirstService implements IFirstService {
-    @Resource
+    @Autowired
     private IFirstDao firstDao;
 
     @Override

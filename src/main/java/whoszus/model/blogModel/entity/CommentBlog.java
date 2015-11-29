@@ -46,4 +46,28 @@ public class CommentBlog {
     public int getUid() {
         return uid;
     }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
+    public void setMessageId(String messageId) {
+        this.messageId = messageId;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public void setBlogId(int blogId) {
+        this.blogId = blogId;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 }

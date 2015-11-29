@@ -20,7 +20,7 @@ public class UserLogin implements Serializable {
     @Id
     @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int getId() {
+    public int getid() {
         return id;
     }
 
@@ -46,5 +46,29 @@ public class UserLogin implements Serializable {
     @Column(name="lastLoginDate")
     public Date getLastLoginDate() {
         return lastLoginDate;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setRegistDate(Date registDate) {
+        RegistDate = registDate;
+    }
+
+    public void setLastLoginDate(Date lastLoginDate) {
+        this.lastLoginDate = lastLoginDate;
     }
 }

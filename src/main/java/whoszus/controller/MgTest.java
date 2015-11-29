@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import whoszus.model.firstModel.entity.ClassCather;
 import whoszus.model.firstModel.service.IFirstService;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,8 +23,7 @@ import java.util.UUID;
 @RequestMapping("/cc")
 public class MgTest {
 
-    @Autowired
-    private IFirstService firstService;
+//    private IFirstService firstService;
 
     @RequestMapping("test")
 //    @ResponseBody
@@ -46,18 +46,18 @@ public class MgTest {
         }
     }
 
-
-    @ResponseBody
-    @RequestMapping("add")
-    public List<ClassCather> add(ClassCather classCather ){
-        List<ClassCather> list =new ArrayList<>();
-        String uuid = UUID.randomUUID().toString();
-        classCather.setUuid(uuid);
-        System.out.println("-----"+classCather);
-        firstService.save(classCather);
-        list.add(classCather);
-        System.out.println(list);
-        return list;
-    }
+//
+//    @ResponseBody
+//    @RequestMapping("add")
+//    public List<ClassCather> add(ClassCather classCather ){
+//        List<ClassCather> list =new ArrayList<>();
+//        String uuid = UUID.randomUUID().toString();
+//        classCather.setUuid(uuid);
+//        System.out.println("-----"+classCather);
+//        firstService.save(classCather);
+//        list.add(classCather);
+//        System.out.println(list);
+//        return list;
+//    }
 
 }

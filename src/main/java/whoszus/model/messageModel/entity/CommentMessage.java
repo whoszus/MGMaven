@@ -45,4 +45,24 @@ public class CommentMessage {
     public int getUid() {
         return uid;
     }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
+
+    public void setThemeId(String themeId) {
+        this.themeId = themeId;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
 }

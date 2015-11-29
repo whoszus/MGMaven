@@ -53,4 +53,28 @@ public class Blog implements Serializable{
     public String getTheme() {
         return theme;
     }
+
+    public void setUuid(int uuid) {
+        this.uuid = uuid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public void setAnonymous(int anonymous) {
+        this.anonymous = anonymous;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public void setTheme(String theme) {
+        this.theme = theme;
+    }
 }
