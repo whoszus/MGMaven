@@ -34,14 +34,14 @@ public class UserDaoImpl implements IUserDao {
 	
 	@Override
 	public boolean isExist(UserEntity user) {
-		Session session = this.getSession();
-		String hql = "from UserEntity where username =? and password = ?";
-		Query query = session.createQuery(hql);
-		query.setString(0, user.getUsername());
-		query.setString(1, user.getPassword());
-		if (query.list().size() >= 1) {
-			return true;
-		}
+//		Session session = this.getSession();
+//		String hql = "from UserEntity where username =? and password = ?";
+//		Query query = session.createQuery(hql);
+//		query.setString(0, user.getUsername());
+//		query.setString(1, user.getPassword());
+//		if (query.list().size() >= 1) {
+//			return true;
+//		}
 		return false;
 	}
 
